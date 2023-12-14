@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HealthTrack+ Dashboard"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/exerciseTile"
+        android:layout_width="176dp"
+        android:layout_height="93dp"
+        android:layout_below="@+id/dashboardTitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="#87CEFA"
+        android:backgroundTint="@color/black"
+        android:onClick="onExerciseTileClick"
+        android:text="Exercise" />
+
+    <Button
+        android:id="@+id/nutritionTile"
+        android:layout_width="200dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/dashboardTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/exerciseTile"
+        android:background="#4CAF50"
+        android:backgroundTint="#BC5959"
+        android:onClick="onNutritionTileClick"
+        android:text="Nutrition"
+        android:textColorHighlight="#9F4040"
+        android:textColorLink="#C56666"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/mentalWellBeingTile"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@+id/exerciseTile"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFD700"
+        android:onClick="onMentalWellBeingTileClick"
+        android:text="Mental Well-being" />
+
+    <Button
+        android:id="@+id/caloriesTile"
+        android:layout_width="190dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/nutritionTile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="386dp"
+        android:background="#FFA07A"
+        android:backgroundTint="#873434"
+        android:onClick="onCaloriesTileClick"
+        android:text="Calories"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#673AB7" />
+
+</RelativeLayout>
